@@ -65,6 +65,7 @@ header .slider .sl-block h1 {
   outline: none;
   background-color: var(--p-color);
   margin-right: 10px;
+  margin-bottom: 15px;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.5s ease-in-out;
@@ -107,6 +108,7 @@ header .container > i:hover {
   justify-content: center;
   flex-direction: column;
   z-index: 99;
+  padding: 20px;
 }
 .fixed-menu .cross {
   position: absolute;
@@ -147,39 +149,30 @@ header .container > i:hover {
   align-self: center;
   margin-top: 30px;
 }
-.footer-social i,
 .fixed-menu .fixed-soc i {
   margin-left: 10px;
   cursor: pointer;
+  padding: 10px 5px;
+  box-sizing: content-box;
 }
-.footer-social i:nth-child(1),
 .fixed-menu .fixed-soc i:nth-child(1) {
   background-color: #2980b9;
-  padding: 10px;
   border-radius: 50%;
 }
-.footer-social i:nth-child(2),
 .fixed-menu .fixed-soc i:nth-child(2) {
   background-color: #3498db;
-  padding: 10px;
   border-radius: 50%;
 }
-.footer-social i:nth-child(3),
 .fixed-menu .fixed-soc i:nth-child(3) {
   background-color: #e74c3c;
-  padding: 10px;
   border-radius: 50%;
 }
-.footer-social i:nth-child(4),
 .fixed-menu .fixed-soc i:nth-child(4) {
   background-color: #f368e0;
-  padding: 10px;
   border-radius: 50%;
 }
-.footer-social i:nth-child(5),
 .fixed-menu .fixed-soc i:nth-child(5) {
   background-color: #48dbfb;
-  padding: 10px;
   border-radius: 50%;
 }
 
@@ -217,7 +210,7 @@ header .container > i:hover {
 /* subscribe ---------------- */
 .subscribe {
   text-align: center;
-  padding: 80px;
+  padding: 80px 0;
   background: linear-gradient(rgba(45, 51, 57, 0.9), rgba(45, 51, 57, 0.9)),
     url("../images/heade-bg.jpg");
   background-size: cover;
@@ -318,8 +311,6 @@ header .container > i:hover {
   background-color: white;
   border-color: white;
   color: var(--main-color);
-}
-.block .w-img {
 }
 .block .w-img img {
   max-width: 150%;
@@ -515,7 +506,7 @@ header .container > i:hover {
 @media (max-width: 767px) {
   .container {
     width: 100%;
-    padding: 0 40px;
+    padding: 40px 40px 0;
     overflow: hidden;
   }
   header .slider {
@@ -546,6 +537,11 @@ header .container > i:hover {
   }
   .w-blocks .block {
     width: 90%;
+  }
+  .subscribe input {
+    padding: 10px 20px;
+    width: 350px;
+    margin-bottom: 30px;
   }
   .team {
     padding: 50px;
@@ -582,13 +578,16 @@ header .container > i:hover {
   }
   .contact form textarea {
     width: 90%;
-    height: 300px;
+    height: 150px;
     border-radius: 8px;
     padding: 20px;
     margin-top: 0;
   }
   .contact .footer-social {
     right: 20%;
+  }
+  .contact .copy {
+    font-size: 12px;
   }
 }
 @media (max-width: 550px) {
